@@ -1,4 +1,4 @@
-// src/models/landing.js
+// src/landing.js
 
 const mongoose = require('mongoose');
 
