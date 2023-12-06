@@ -10,11 +10,13 @@ const app = express();
 app.use(cors());
 app.use(express.json());
 
-mongoose.connect(process.env.mongoDB, { 
+const { mongoDB, SERVER_SELECTION_TIMEOUT, SOCKET_TIMEOUT } = process.env;
+
+mongoose.connect(mongoDB, { 
     useNewUrlParser: true, 
     useUnifiedTopology: true,
-    serverSelectionTimeoutMS: 50000, // 50 seconds timeout for server selection
-    socketTimeoutMS: 60000, // 60 seconds timeout for socket operations 
+    serverSelectionTimeoutMS: SERVER_SELECTION_TIMEOUT || 30000,
+    socketTimeoutMS: SOCKET_TIMEOUT || 45000,
 })
 .then(() => {
     console.log('MongoDB connected successfully');
