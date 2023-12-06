@@ -10,13 +10,18 @@ const app = express();
 app.use(cors());
 app.use(express.json());
 
-mongoose.connect(process.env.mongoDB, { useNewUrlParser: true, useUnifiedTopology: true })
-    .then(() => {
-        console.log('MongoDB connected successfully');
-    })
-    .catch((error) => {
-        console.error('MongoDB connection failed:', error);
-    });
+mongoose.connect(process.env.mongoDB, { 
+    useNewUrlParser: true, 
+    useUnifiedTopology: true,
+    serverSelectionTimeoutMS: 50000, // 50 seconds timeout for server selection
+    socketTimeoutMS: 60000, // 60 seconds timeout for socket operations 
+})
+.then(() => {
+    console.log('MongoDB connected successfully');
+})
+.catch((error) => {
+    console.error('MongoDB connection failed:', error);
+});
 
 app.post('/user-details', async (req, res) => {
     try {
