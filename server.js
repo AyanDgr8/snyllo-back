@@ -31,20 +31,21 @@ mongoose.connect(mongoDB, {
   });
 
 
+// Define a route to handle form submissions
 app.post('/user-details', async (req, res) => {
-    try {
-        console.log('Received request:', req.body);
+  try {
+    console.log('Received request:', req.body);
 
-        const user = new UserDetails(req.body);
-        const savedUser = await user.save();
+    const user = new UserDetails(req.body);
+    const savedUser = await user.save();
 
-        console.log('User details saved successfully:', savedUser);
-        
-        res.json(savedUser);
-    } catch (error) {
-        console.error('Error saving user details:', error);
-        res.status(500).json({ error: error.message });
-    }
+    console.log('User details saved successfully:', savedUser);
+    
+    res.json(savedUser);
+  } catch (error) {
+    console.error('Error saving user details:', error);
+    res.status(500).json({ error: error.message });
+  }
 });
 
 

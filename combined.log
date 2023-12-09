@@ -14,3 +14,25 @@ info: ::1 - - [08/Dec/2023:07:16:16 +0000] "POST /user-details HTTP/1.1" 500 38 
 info: MongoDB connected successfully
 info: ::1 - - [08/Dec/2023:07:20:50 +0000] "OPTIONS /user-details HTTP/1.1" 204 0 "http://localhost:3001/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/119.0.0.0 Safari/537.36"
 info: ::1 - - [08/Dec/2023:07:20:50 +0000] "POST /user-details HTTP/1.1" 200 176 "http://localhost:3001/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/119.0.0.0 Safari/537.36"
+info: MongoDB connected successfully
+info: MongoDB connected successfully
+info: MongoDB connected successfully
+info: ::1 - - [08/Dec/2023:08:07:36 +0000] "OPTIONS /user-details HTTP/1.1" 204 0 "http://localhost:3001/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/119.0.0.0 Safari/537.36"
+info: ::1 - - [08/Dec/2023:08:07:36 +0000] "POST /user-details HTTP/1.1" 200 174 "http://localhost:3001/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/119.0.0.0 Safari/537.36"
+info: ::1 - - [08/Dec/2023:08:10:36 +0000] "OPTIONS /user-details HTTP/1.1" 204 0 "http://localhost:3001/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/119.0.0.0 Safari/537.36"
+info: ::1 - - [08/Dec/2023:08:10:36 +0000] "POST /user-details HTTP/1.1" 200 171 "http://localhost:3001/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/119.0.0.0 Safari/537.36"
+info: MongoDB connected successfully
+info: ::1 - - [08/Dec/2023:08:16:44 +0000] "OPTIONS /user-details HTTP/1.1" 204 0 "http://localhost:3001/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/119.0.0.0 Safari/537.36"
+info: ::1 - - [08/Dec/2023:08:16:44 +0000] "POST /user-details HTTP/1.1" 500 33 "http://localhost:3001/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/119.0.0.0 Safari/537.36"
+info: ::1 - - [08/Dec/2023:08:40:21 +0000] "OPTIONS /user-details HTTP/1.1" 204 0 "http://localhost:3001/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/119.0.0.0 Safari/537.36"
+info: ::1 - - [08/Dec/2023:08:40:21 +0000] "POST /user-details HTTP/1.1" 500 33 "http://localhost:3001/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/119.0.0.0 Safari/537.36"
+info: MongoDB connected successfully
+info: ::1 - - [08/Dec/2023:08:56:59 +0000] "OPTIONS /user-details HTTP/1.1" 204 0 "http://localhost:3001/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/119.0.0.0 Safari/537.36"
+info: ::1 - - [08/Dec/2023:08:56:59 +0000] "POST /user-details HTTP/1.1" 500 33 "http://localhost:3001/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/119.0.0.0 Safari/537.36"
+info: MongoDB connected successfully
+info: ::1 - - [08/Dec/2023:08:59:04 +0000] "OPTIONS /user-details HTTP/1.1" 204 0 "http://localhost:3001/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/119.0.0.0 Safari/537.36"
+info: ::1 - - [08/Dec/2023:08:59:04 +0000] "POST /user-details HTTP/1.1" 200 172 "http://localhost:3001/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/119.0.0.0 Safari/537.36"
+info: ::1 - - [08/Dec/2023:09:33:42 +0000] "OPTIONS /user-details HTTP/1.1" 204 0 "http://localhost:3001/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/119.0.0.0 Safari/537.36"
+info: ::1 - - [08/Dec/2023:09:33:42 +0000] "POST /user-details HTTP/1.1" 500 229 "http://localhost:3001/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/119.0.0.0 Safari/537.36"
+info: ::1 - - [08/Dec/2023:09:34:04 +0000] "OPTIONS /user-details HTTP/1.1" 204 0 "http://localhost:3001/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/119.0.0.0 Safari/537.36"
+info: ::1 - - [08/Dec/2023:09:34:04 +0000] "POST /user-details HTTP/1.1" 200 167 "http://localhost:3001/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/119.0.0.0 Safari/537.36"
