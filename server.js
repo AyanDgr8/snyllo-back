@@ -30,17 +30,13 @@ mongoose.connect(mongoDB, {
     logger.error('MongoDB connection failed:', error);
   });
 
-
 // Define a route to handle form submissions
 app.post('/user-details', async (req, res) => {
   try {
     console.log('Received request:', req.body);
-
     const user = new UserDetails(req.body);
     const savedUser = await user.save();
-
     console.log('User details saved successfully:', savedUser);
-    
     res.json(savedUser);
   } catch (error) {
     console.error('Error saving user details:', error);
@@ -48,9 +44,7 @@ app.post('/user-details', async (req, res) => {
   }
 });
 
-
 const PORT = process.env.PORT || 3000;
-
 app.listen(PORT, () => {
     console.log(`Server is running on port ${PORT}`);
 });
