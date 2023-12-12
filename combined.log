@@ -46,3 +46,7 @@ info: MongoDB connected successfully
 info: MongoDB connected successfully
 info: ::1 - - [11/Dec/2023:05:53:02 +0000] "OPTIONS /user-details HTTP/1.1" 204 0 "http://localhost:3001/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/119.0.0.0 Safari/537.36"
 info: ::1 - - [11/Dec/2023:05:53:03 +0000] "POST /user-details HTTP/1.1" 200 179 "http://localhost:3001/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/119.0.0.0 Safari/537.36"
+info: MongoDB connected successfully
+info: ::1 - - [11/Dec/2023:06:21:27 +0000] "OPTIONS /user-details HTTP/1.1" 204 0 "http://localhost:3001/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/119.0.0.0 Safari/537.36"
+info: ::1 - - [11/Dec/2023:06:21:27 +0000] "POST /user-details HTTP/1.1" 200 173 "http://localhost:3001/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/119.0.0.0 Safari/537.36"
+info: MongoDB connected successfully

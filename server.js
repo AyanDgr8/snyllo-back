@@ -4,7 +4,7 @@ const mongoose = require('mongoose');
 const morgan = require('morgan');
 const cors = require('cors');
 const logger = require('./logger');
-const UserDetails = require('./src/landing');
+const routes = require('./routes'); // Import your routes module
 require('dotenv').config();
 
 const app = express();
@@ -17,8 +17,8 @@ app.use(morgan('combined', { stream: { write: (message) => logger.info(message.t
 app.use(cors());
 
 // MongoDB connection
-const { mongoDB } = process.env;
-
+// const { mongoDB } = process.env;
+const mongoDB = "mongodb+srv://snylloesteticsa:7o1oApCLYGjJiKtV@cluster0.7qdbcsu.mongodb.net/?retryWrites=true&w=majority"
 mongoose.connect(mongoDB, { 
     useNewUrlParser: true, 
     useUnifiedTopology: true 
@@ -30,19 +30,8 @@ mongoose.connect(mongoDB, {
     logger.error('MongoDB connection failed:', error);
   });
 
-// Define a route to handle form submissions
-app.post('/user-details', async (req, res) => {
-  try {
-    console.log('Received request:', req.body);
-    const user = new UserDetails(req.body);
-    const savedUser = await user.save();
-    console.log('User details saved successfully:', savedUser);
-    res.json(savedUser);
-  } catch (error) {
-    console.error('Error saving user details:', error);
-    res.status(500).json({ error: error.message });
-  }
-});
+// Use the routes defined in the external module
+app.use('/', routes);
 
 const PORT = process.env.PORT || 3000;
 app.listen(PORT, () => {
