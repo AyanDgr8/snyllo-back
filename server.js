@@ -4,7 +4,7 @@ const mongoose = require('mongoose');
 const morgan = require('morgan');
 const cors = require('cors');
 const logger = require('./logger');
-const routes = require('./routes'); // Import your routes module
+const routes = require('./src/routes/router'); 
 require('dotenv').config();
 
 const app = express();
@@ -17,8 +17,7 @@ app.use(morgan('combined', { stream: { write: (message) => logger.info(message.t
 app.use(cors());
 
 // MongoDB connection
-// const { mongoDB } = process.env;
-const mongoDB = "mongodb+srv://snylloesteticsa:7o1oApCLYGjJiKtV@cluster0.7qdbcsu.mongodb.net/?retryWrites=true&w=majority"
+const mongoDB = process.env;
 mongoose.connect(mongoDB, { 
     useNewUrlParser: true, 
     useUnifiedTopology: true 
