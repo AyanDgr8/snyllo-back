@@ -22,12 +22,12 @@ router.post('/user-details', async (req, res) => {
 router.post('/submit-popup', async (req, res) => {
   try {
     console.log('Received popup submission:', req.body);
-    const users = new PopupDetails(req.body);
-    const savedUsers = await users.save();
-    console.log('User details saved successfully:', savedUsers);
-    res.json(savedUser);
+    const popup = new PopupDetails(req.body);
+    const savedPopup = await popup.save();
+    console.log('Popup details saved successfully:', savedPopup);
+    res.json(savedPopup);
   } catch (error) {
-    console.error('Error saving user details:', error);
+    console.error('Error saving popup details:', error);
     res.status(500).json({ error: error.message });
   }
 });
