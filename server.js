@@ -17,7 +17,7 @@ app.use(morgan('combined', { stream: { write: (message) => logger.info(message.t
 app.use(cors());
 
 // MongoDB connection
-const mongoDB = process.env;
+const mongoDB = process.env.MONGODB;
 mongoose.connect(mongoDB, { 
     useNewUrlParser: true, 
     useUnifiedTopology: true 
