@@ -3,7 +3,7 @@
 const mongoose = require('mongoose');
 
 const popupSchema = mongoose.Schema({
-    phone: { type: Number, required: true },
+    phoneNumber: { type: Number, required: true },
     treatmentType: { type: String, required: true },
 });
 

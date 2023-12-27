@@ -2,7 +2,8 @@
 const express = require('express');
 const router = express.Router();
 const UserDetails = require('../models/landing');
-const PopupDetails = require('../models/popup');
+// const PopupDetails = require('../models/popup');
+require('dotenv').config();
 
 // Define your routes
 router.post('/user-details', async (req, res) => {
@@ -32,6 +33,6 @@ router.post('/submit-popup', async (req, res) => {
   }
 });
 
-// Add more routes as needed
 
+// Add more routes as needed
 module.exports = router;

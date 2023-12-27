@@ -20,7 +20,9 @@ app.use(cors());
 const mongoDB = process.env.MONGODB;
 mongoose.connect(mongoDB, { 
     useNewUrlParser: true, 
-    useUnifiedTopology: true 
+    useUnifiedTopology: true,
+    connectTimeoutMS: 30000, 
+    socketTimeoutMS: 30000,
 })
   .then(() => {
     logger.info('MongoDB connected successfully');
